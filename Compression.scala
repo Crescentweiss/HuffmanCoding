@@ -48,7 +48,7 @@ object HuffmanCoding {
   def buildHuffmanTree(frequency: mutable.Map[Char, Int]): Node = {
     import scala.collection.mutable.PriorityQueue
 
-    val queue = PriorityQueue[(Int, Node)]()(Ordering.by(_._1))
+    val queue = PriorityQueue[(Int, Node)]()(Ordering.by(-_._1))
     for ((char, freq) <- frequency) queue.enqueue((freq, Node(Some(char), freq)))
 
     while (queue.size > 1) {
