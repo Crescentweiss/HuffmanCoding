@@ -1,0 +1,1162 @@
+2024.02.06 18:38:48 INFO  Started: Metals version 1.2.0 in folders 'D:\scala_learning\HuffmanCoding' for client Visual Studio Code 1.85.2.
+2024.02.06 18:38:50 WARN  scala-cli >= 0.1.3 not found in PATH, fetching and starting a JVM-based Scala CLI
+2024.02.06 18:38:52 INFO  Found Java version 1. Scala CLI requires at least Java 17, getting a temurin:17 JVM via coursier-jvm.
+2024.02.06 18:38:54 INFO  no build target found for D:\scala_learning\HuffmanCoding\Compression.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.06 18:57:10 INFO  Shutting down server
+2024.02.06 18:57:10 INFO  shutting down Metals
+2024.02.06 18:57:10 INFO  Exiting server
+2024.02.06 19:04:53 INFO  Started: Metals version 1.2.0 in folders 'D:\scala_learning\HuffmanCoding' for client Visual Studio Code 1.86.0.
+2024.02.06 19:04:59 WARN  scala-cli >= 0.1.3 not found in PATH, fetching and starting a JVM-based Scala CLI
+2024.02.06 19:05:00 INFO  no build target found for D:\scala_learning\HuffmanCoding\Compression.scala. Using presentation compiler with project's scala-library version: 3.3.1
+2024.02.06 19:04:59 INFO  Found Java version 1. Scala CLI requires at least Java 17, getting a temurin:17 JVM via coursier-jvm.
+2024.02.06 19:05:48 ERROR Unexpected error initializing server: 
+coursierapi.shaded.coursier.cache.ArtifactError$DownloadError: download error: Caught java.net.SocketTimeoutException (Read timed out) while downloading https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_windows_hotspot_17_35.zip
+	at coursierapi.shaded.coursier.cache.internal.Downloader$.helper$2(Downloader.scala:793)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$.coursier$cache$internal$Downloader$$downloading(Downloader.scala:806)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$Blocking$.remote(Downloader.scala:415)
+	at coursierapi.shaded.coursier.cache.internal.Downloader.$anonfun$remote$6(Downloader.scala:533)
+	at coursierapi.shaded.scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:475)
+	at sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:469)
+	at sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:159)
+	at sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1320)
+	at sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1233)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:417)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:389)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:558)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:201)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1584)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1512)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:352)
+	at coursierapi.shaded.coursier.cache.CacheUrl$.rangeResOpt(CacheUrl.scala:218)
+	at coursierapi.shaded.coursier.cache.CacheUrl$.urlConnectionMaybePartial(CacheUrl.scala:341)
+	at coursierapi.shaded.coursier.cache.ConnectionBuilder.connectionMaybePartial(ConnectionBuilder.scala:50)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$Blocking$.doDownload(Downloader.scala:222)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$Blocking$.$anonfun$remote$2(Downloader.scala:410)
+	at coursierapi.shaded.coursier.cache.CacheLocks$.loop$1(CacheLocks.scala:73)
+	at coursierapi.shaded.coursier.cache.CacheLocks$.withLockOr(CacheLocks.scala:93)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$Blocking$.$anonfun$remote$1(Downloader.scala:413)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$.$anonfun$downloading$1(Downloader.scala:764)
+	at coursierapi.shaded.coursier.cache.CacheLocks$.withUrlLock(CacheLocks.scala:112)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$.helper$2(Downloader.scala:764)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$.coursier$cache$internal$Downloader$$downloading(Downloader.scala:806)
+	at coursierapi.shaded.coursier.cache.internal.Downloader$Blocking$.remote(Downloader.scala:415)
+	at coursierapi.shaded.coursier.cache.internal.Downloader.$anonfun$remote$6(Downloader.scala:533)
+	at coursierapi.shaded.scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 19:12:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:12:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:12:19 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 86
+2024.02.06 19:13:59 WARN  Could not find semantic tokens for: file:///D:/scala_learning/HuffmanCoding/read.scala
+2024.02.06 19:15:12 WARN  Could not find semantic tokens for: file:///D:/scala_learning/HuffmanCoding/read.scala
+2024.02.06 19:15:15 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:19:41 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:20:58 WARN  Could not find semantic tokens for: file:///D:/scala_learning/HuffmanCoding/read.scala
+2024.02.06 19:20:59 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:20:59 WARN  Could not find semantic tokens for: file:///D:/scala_learning/HuffmanCoding/read.scala
+2024.02.06 19:21:01 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:11 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:27 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:41 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:21:47 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:22:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:25:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:26:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:26:34 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2024.02.06 19:27:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:27:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:27:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:27:50 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:27:52 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:27:57 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:27:58 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:28:13 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:28:15 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:28:17 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:28:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:28:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:28:31 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:29:54 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:31:59 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:32:37 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2024.02.06 19:33:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:33:24 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:36:53 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2024.02.06 19:37:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:37:31 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:37:42 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:37:43 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:37:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:37:46 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:37:58 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:04 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:13 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:14 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:17 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:20 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:38:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:40:50 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:40:56 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:41:02 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 738
+2024.02.06 19:41:03 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:09 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:10 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:12 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:15 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:28 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:31 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:41:58 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:04 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:06 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:11 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:15 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:25 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:28 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:36 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:51 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:53 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:42:59 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:43:04 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:47:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:47:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:48:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:48:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:48:23 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:48:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:48:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:48:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:49:04 WARN  Using indexes to guess the definition of source
+2024.02.06 19:49:05 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:53:20 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1363
+二月 06, 2024 7:53:47 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2024.02.06 19:54:28 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:54:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:54:32 WARN  Build server is not auto-connectable.
+2024.02.06 19:54:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\read.scala
+2024.02.06 19:54:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.09s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.09s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.11s
+2024.02.06 19:54:33 INFO  time: code lens generation in 1.1s
+2024.02.06 19:54:40 WARN  Build server is not auto-connectable.
+2024.02.06 19:54:42 WARN  no build tool detected in workspace 'D:\scala_learning\HuffmanCoding'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.02.06 19:54:44 WARN  Build server is not auto-connectable.
+2024.02.06 19:54:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:54:47 INFO  Attempting to connect to the build server...
+2024.02.06 19:54:47 INFO  No build server found
+2024.02.06 19:54:47 INFO  time: Connected to build server in 4ms
+2024.02.06 19:54:47 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 19:54:51 INFO  compilation cancelled
+2024.02.06 19:54:53 WARN  Build server is not auto-connectable.
+2024.02.06 19:54:55 WARN  Build server is not auto-connectable.
+2024.02.06 19:54:55 WARN  Build server is not auto-connectable.
+2024.02.06 19:54:55 WARN  Build server is not auto-connectable.
+2024.02.06 19:57:03 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 7:57:24 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:57:38 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:57:53 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1422
+二月 06, 2024 7:58:05 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:58:09 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:58:35 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:58:38 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+二月 06, 2024 7:58:45 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace
+2024.02.06 20:15:09 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:38: error: illegal character '\uff0c'
+    Source.fromFile(filePath， ).getLines().foreach { line =>
+                            ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:15:10 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:15:13 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:15:15 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:15:17 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 8:15:35 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1526
+2024.02.06 20:15:41 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 8:16:24 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 1584
+2024.02.06 20:22:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:20 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:24 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:25 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:28 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:31 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:22:34 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:10 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:24 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:46 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:51 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:54 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:23:58 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:24:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:24:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:24:03 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:24:08 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:24:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:24:23 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:06 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:09 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:11 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:12 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:14 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:81: error: unclosed string interpolation
+      println(s"char: $")
+                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:659)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:357)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:376)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:25:14 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:17 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:22 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:36 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:25:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:28:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:28:34 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:28:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:29:08 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:29:11 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:29:46 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:30:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:30:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 8:31:21 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+严重: Internal error: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+java.util.concurrent.CompletionException: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+	at com.sun.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:120)
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:326)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:276)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:126)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.$anonfun$toAbsolutePath$4(MtagsEnrichments.scala:181)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.withTryDecode$1(MtagsEnrichments.scala:158)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:181)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:684)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:681)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$3(Compilers.scala:804)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionJavaList.map(MetalsEnrichments.scala:271)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$2(Compilers.scala:803)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.06 20:31:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:31:51 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:32:16 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:45:05 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:45:07 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:45:09 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:45:14 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:46:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:13 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:16 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:20 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:23 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:24 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:27 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:29 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: illegal character '\u2018'
+        if(char.isLetterOrDigit || char == ' ' || char == ‘) { // 只统计字母、数字和空格
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:48:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:30 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: illegal character '\u2018'
+        if(char.isLetterOrDigit || char == ' ' || char == ‘) { // 只统计字母、数字和空格
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:48:31 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:31 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: illegal character '\u2019'
+        if(char.isLetterOrDigit || char == ' ' || char == ’) { // 只统计字母、数字和空格
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:48:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:32 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: illegal character '\u2019'
+        if(char.isLetterOrDigit || char == ' ' || char == ’) { // 只统计字母、数字和空格
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:48:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:35 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: unclosed character literal
+        if(char.isLetterOrDigit || char == ' ' || char == '') { // 只统计字母、数字和空格
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:48:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:35 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: unclosed character literal
+        if(char.isLetterOrDigit || char == ' ' || char == '') { // 只统计字母、数字和空格
+                                                          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:48:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:48:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:49:11 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: unclosed character literal
+        if(char.isLetterOrDigit || char == ' '') { // 只统计字母、数字和空格
+                                              ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:49:12 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:49:12 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:39: error: unclosed character literal
+        if(char.isLetterOrDigit || char == ' '') { // 只统计字母、数字和空格
+                                              ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 20:49:13 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:51:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:07 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:08 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:23 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:43 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:56 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:54:59 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:05 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:06 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:08 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:11 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:41 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:47 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:51 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:54 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:58 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:55:59 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:03 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:06 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:08 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:14 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:20 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:27 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:36 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 8:56:41 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+警告: Unmatched cancel notification for request id 3295
+2024.02.06 20:56:43 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:53 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:57 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:56:59 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:01 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:09 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:11 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:24 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:25 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:27 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:47 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:57:55 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:58:01 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 20:58:03 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:00:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:00:43 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:00:54 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:01:18 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:01:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:01:20 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:02:10 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:03:04 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:03:12 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:104: error: Non-zero integral values may not have a leading zero.
+  def handleMissingChar(char: Char): 000String] = {
+                                     ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.restOfUncertainToken$1(LegacyScanner.scala:856)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:872)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchZero$1(LegacyScanner.scala:330)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:332)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:03:14 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:03:16 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:04:47 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:04:51 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:04:56 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:05:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:05:50 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:07:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:07:52 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:09:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:09:34 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:11:56 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:11:57 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:01 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:05 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:08 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:10 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:21 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:12:51 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 9:12:54 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+严重: Internal error: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+java.util.concurrent.CompletionException: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+	at com.sun.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:120)
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:326)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:276)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:126)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.$anonfun$toAbsolutePath$4(MtagsEnrichments.scala:181)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.withTryDecode$1(MtagsEnrichments.scala:158)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:181)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:684)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:681)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$3(Compilers.scala:804)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionJavaList.map(MetalsEnrichments.scala:271)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$2(Compilers.scala:803)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.06 21:13:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:24 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:27 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:33 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:36 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:46 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:50 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:55 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:13:57 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:02 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:10 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:12 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:34 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:45 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:46 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:100: error: illegal character '\uff08'
+        handleMissingChar（
+                         ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:14:47 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:100: error: illegal character '\uff08'
+        handleMissingChar（c
+                         ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:14:48 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:48 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:100: error: illegal character '\uff08'
+        handleMissingChar（c
+                         ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:14:52 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:56 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:14:58 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:00 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:13 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:23 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:28 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:30 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:37 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:39 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:15:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:16:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:16:48 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed character literal
+          ''handleMissingChar(charr)''
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:16:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:16:49 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed character literal
+          ''handleMissingChar(charr)''
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:16:51 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed character literal
+          ''
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:16:52 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:16:52 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:101: error: unclosed character literal
+          ''
+          ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchSingleQuote$1(LegacyScanner.scala:407)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:412)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:16:54 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:17:19 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+二月 06, 2024 9:17:25 下午 org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+严重: Internal error: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+java.util.concurrent.CompletionException: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:661)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1990)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.nio.file.FileSystemNotFoundException: C:\Program%2520Files\Java\jdk-1.8\src.zip
+	at com.sun.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:120)
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:326)
+	at java.nio.file.FileSystems.newFileSystem(FileSystems.java:276)
+	at scala.meta.internal.io.PlatformFileIO$.newFileSystem(PlatformFileIO.scala:104)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:126)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.$anonfun$toAbsolutePath$4(MtagsEnrichments.scala:181)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.withTryDecode$1(MtagsEnrichments.scala:158)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:181)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:684)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:681)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$3(Compilers.scala:804)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionJavaList.map(MetalsEnrichments.scala:271)
+	at scala.meta.internal.metals.Compilers.$anonfun$definition$2(Compilers.scala:803)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.06 21:17:26 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:19:12 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:99: error: illegal character '\u2018'
+           huffmanCodeMap.getOrElse(charr, ‘’).toStrin
+                                           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:19:12 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:19:12 ERROR Failed to tokenize input for semantic tokens for D:\scala_learning\HuffmanCoding\Compression.scala
+scala.meta.tokenizers.TokenizeException: <input>:99: error: illegal character '\u2018'
+           huffmanCodeMap.getOrElse(charr, ‘’).toStrin
+                                           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchOther$1(LegacyScanner.scala:469)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:474)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:1011)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:24)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:962)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:332)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:541)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+2024.02.06 21:19:14 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:19:15 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:19:29 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:19:32 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:20:27 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:23:35 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:23:38 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:23:40 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:23:44 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:23:46 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:17 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:23 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:25 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:42 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:46 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:47 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala
+2024.02.06 21:26:49 WARN  no build target for: D:\scala_learning\HuffmanCoding\Compression.scala

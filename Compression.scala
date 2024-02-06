@@ -34,9 +34,11 @@ object HuffmanCoding {
   // 1. 统计字符频率
   def countCharacterFrequency(filePath: String): mutable.Map[Char, Int] = {
     var frequency = mutable.Map[Char, Int]()
-    for (char <- Source.fromFile(filePath).mkString) {
-      if (char.isLetterOrDigit || char == ' ') {  // 只统计字母、数字和空格
-        frequency += (char -> (frequency.getOrElse(char, 0) + 1))
+    Source.fromFile(filePath, "UTF-8").getLines().foreach { line =>
+      for(char <- line){
+        if(char.isLetterOrDigit || char == ' ') { // 只统计字母、数字和空格
+          frequency += (char -> (frequency.getOrElse(char, 0) + 1))
+        }
       }
     }
     frequency
@@ -72,9 +74,11 @@ object HuffmanCoding {
 
   // 4. 打印字符频率
   def printCharacterFrequencies(frequency: mutable.Map[Char, Int]): Unit = {
+    val totalChars = frequency.values.sum.toDouble
     println("Character Frequencies:")
-    for ((char, freq) <- frequency.toSeq.sortBy(_._2).reverse) {
-      println(s"$char: $freq")
+    for ((char, freq) <- frequency.toSeq.sortBy(-_._2)) {
+      val percent = (freq / totalChars) * 100
+      println(s"$char: ${"%.4f".format(percent)}%")
     }
   }
 
@@ -88,11 +92,21 @@ object HuffmanCoding {
 
   // 6. 压缩文本并写入文件
   def compressText(inputFile: String, outputFile: String, huffmanCodeMap: mutable.Map[Char, String]): Unit = {
-    val source = Source.fromFile(inputFile, "utf-8")
-    val compressedData = source.mkString.map(c => huffmanCodeMap(c)).mkString
     val outputStream = new FileOutputStream(outputFile)
-    outputStream.write(compressedData.getBytes("utf-8"))
-    outputStream.close()
+    for (line <- Source.fromFile(inputFile, "UTF-8").getLines()) {
+      val compressedLine = line.flatMap{charr => 
+        if (charr.isLetterOrDigit || charr == ' ') {
+           // 编码数字、字母和空格
+           huffmanCodeMap.getOrElse(charr, "").toString
+        } else {
+          ""
+       }
+      }.mkString
+      
+      outputStream.write(compressedLine.getBytes("utf-8"))
+      outputStream.write('\n')
+    }
+    outputStream.close
   }
 
   // 7. 输出哈夫曼树字典到文件
