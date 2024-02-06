@@ -1,2 +1,2 @@
 small demo
-use huffman coding to compress a txt and output dictionary
+use huffman coding to compress Maupassant.txt and output dictionary in HuffDictionary.txt
